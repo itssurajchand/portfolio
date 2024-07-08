@@ -1171,3 +1171,7 @@ section {
   text-align: center;
   font-size: 13px;
 }
+
+div#loom-companion-mv3 {
+  display: none !important;
+}
