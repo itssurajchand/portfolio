@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php 
+$base_url = "http://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']; 
+$desc = "Full Stack Developer with 4+ years of hands-on experience designing,
+                developing and implementing applications and solutions using a range of
+                technologies and programming languages.";
+$title ="Suraj - Full Stack Developer";
+?>
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Suraj - Full Stack Developer</title>
-  <meta content="" name="description">
+  <title><?=$title?></title>
+  <meta property="og:title" content="<?=$title?>"/>
+    <meta property="og:type" content="career"/>
+    <meta property="og:url" content="<?=$base_url?>"/>
+    <meta property="og:image" content="<?=$base_url?>/me.png"/>
+    <meta property="og:site_name" content="IMDb"/>
+    <meta property="fb:admins" content="USER_ID"/>
+    <meta property="og:description"
+          content="<?=$desc?>"/>
+  <meta content="" name="<?=$desc?>">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link
@@ -100,11 +114,7 @@
             <div class="content d-flex flex-column justify-content-center">
               <h3>A bit about me</h3>
               <p>
-                Full Stack Developer with 4+ years of hands-on experience designing,
-                developing and implementing applications and solutions using a range of
-                technologies and programming languages. Seeking to leverage broad
-                development experience and hands-on technical expertise in a challenging role
-                as a Full Stack Developer.
+              Full Stack Developer with 4+ years of hands-on experience designing, developing and implementing applications and solutions using a range of technologies and programming languages. Seeking to leverage broad development experience and hands-on technical expertise in a challenging role as a Full Stack Developer.
               </p>
               <!-- <div class="row">
                   <div class="col-md-6 d-md-flex align-items-md-stretch">
@@ -191,18 +201,20 @@
               </div>
             </div>
 
+
             <div class="progress">
-              <span class="skill">MongoDB <i class="val">70%</i></span>
+              <span class="skill">ReactJs <i class="val">70%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
                 </div>
               </div>
             </div>
 
+
+
           </div>
 
           <div class="col-lg-6">
-
 
 
             <div class="progress">
@@ -220,15 +232,16 @@
                 </div>
               </div>
             </div>
+
             <div class="progress">
-              <span class="skill">ReactJs <i class="val">70%</i></span>
+              <span class="skill">MongoDB <i class="val">70%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
                 </div>
               </div>
             </div>
             <div class="progress">
-              <span class="skill">PHP <i class="val">85%</i></span>
+              <span class="skill">MySQL <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                 </div>
@@ -254,6 +267,61 @@
         </div>
 
         <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Sr. Web Developer at Mind Roots Pvt. Ltd.</h4>
+              <h5>July 2020 - Present</h5>
+              <p><em>Motiaz Royal Business Park, Zirakpur </em></p>
+              <p>
+              <ul>
+                <li>Developed a full stack application using Nodejs, Nextjs and MongoDB.</li>
+                <li>Developed RESTful API endpoints using Nodejs, nestjs and MongoDB to
+                  facilitate data transfer between client and server. </li>
+                <li>Utilized various open source frameworks such as Laravel and Codeigniter to
+                  develop applications</li>
+                <li>Used modern development tools such as Git and GitHub to collaborate on code
+                  and create version control.</li>
+              </ul>
+              </p>
+            </div>
+            <div class="resume-item">
+              <h4>Associate Software Engineer at Prologic Technologies</h4>
+              <h5>Nov 2019 to Jun 2020</h5>
+              <p><em>Phase 7, Ind. Area, Mohali</em></p>
+              <p>
+              <ul>
+                <li>Developed a full fledged e-commerce platform using Codeigniter</li>
+                <li>Designed and developed RESTful APIs using Codeigniter for data
+                  integration between applications</li>
+                <li>Developed and maintained a range of complex web applications using PHP
+                  and MySQL.</li>
+              </ul>
+              </p>
+            </div>
+            <div class="resume-item">
+              <h4>Web Developer at Codeinit Pvt. Ltd.</h4>
+              <h5>Jun 2017 to Nov 2019</h5>
+              <p><em>Tricity Plaza, Panchkula</em></p>
+              <p>
+              <ul>
+                <li>Build websites using WordPress, Codeigniter, Core Php, Mysql, Jquery, Ajax.</li>
+                <li>Customize wordpress themes and plugins to meet clients' requirements.</li>
+                <li>Identifying and solving issues caused by plugins or feeds under PHP, MySQL,
+                  HTML, CSS and Jquery technology.</li>
+              </ul>
+              </p>
+            </div>
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor of Computer Applications</h4>
+              <p><em>Lovely Professional University</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>3 Years of Diploma in Computer Engg</h4>
+              <p><em>Chandigarh College of Engg. & Tech.</em></p>
+            </div>
+          </div>
           <div class="col-lg-6">
             <h3 class="resume-title">Projects</h3>
             <div class="resume-item">
@@ -311,61 +379,7 @@
 
 
           </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Sr. Web Developer at Mind Roots Pvt. Ltd.</h4>
-              <h5>July 2020 - Present</h5>
-              <p><em>Motiaz Royal Business Park, Zirakpur </em></p>
-              <p>
-              <ul>
-                <li>Developed a full stack application using Nodejs, Nextjs and MongoDB.</li>
-                <li>Developed RESTful API endpoints using Nodejs, nestjs and MongoDB to
-                  facilitate data transfer between client and server. </li>
-                <li>Utilized various open source frameworks such as Laravel and Codeigniter to
-                  develop applications</li>
-                <li>Used modern development tools such as Git and GitHub to collaborate on code
-                  and create version control.</li>
-              </ul>
-              </p>
-            </div>
-            <div class="resume-item">
-              <h4>Associate Software Engineer at Prologic Technologies</h4>
-              <h5>Nov 2019 to Jun 2020</h5>
-              <p><em>Phase 7, Ind. Area, Mohali</em></p>
-              <p>
-              <ul>
-                <li>Developed a full fledged e-commerce platform using Codeigniter</li>
-                <li>Designed and developed RESTful APIs using Codeigniter for data
-                  integration between applications</li>
-                <li>Developed and maintained a range of complex web applications using PHP
-                  and MySQL.</li>
-              </ul>
-              </p>
-            </div>
-            <div class="resume-item">
-              <h4>Web Developer at Codeinit Pvt. Ltd.</h4>
-              <h5>Jun 2017 to Nov 2019</h5>
-              <p><em>Tricity Plaza, Panchkula</em></p>
-              <p>
-              <ul>
-                <li>Build websites using WordPress, Codeigniter, Core Php, Mysql, Jquery, Ajax.</li>
-                <li>Customize wordpress themes and plugins to meet clients' requirements.</li>
-                <li>Identifying and solving issues caused by plugins or feeds under PHP, MySQL,
-                  HTML, CSS and Jquery technology.</li>
-              </ul>
-              </p>
-            </div>
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Bachelor of Computer Applications</h4>
-              <p><em>Lovely Professional University</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>3 Years of Diploma in Computer Engg</h4>
-              <p><em>Chandigarh College of Engg. & Tech.</em></p>
-            </div>
-          </div>
+
         </div>
 
       </div>
@@ -671,7 +685,7 @@
 
         <div class="row">
 
-          <div class="col-lg-4 col-md-4">
+          <div class="col-lg-6 col-md-6">
             <div class="contact-about">
               <h3>Suraj</h3>
               <p>Feel free to Contact me</p>
@@ -680,11 +694,13 @@
                 <a href="https://www.facebook.com/ItsSurajChand" class="facebook"><i class="bi bi-facebook"></i></a>
                 <a href="https://www.instagram.com/surajcoder/" class="instagram"><i class="bi bi-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/itssurajchand" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/itssurajchand/" class="Github"><i class="bi bi-github"></i></a>
+                <a href="https://stackoverflow.com/users/12853506/suraj-chand" class="Stack overflow"><i class="bi bi-stack-overflow"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4">
+          <div class="col-lg-6 col-md-6">
             <div class="info">
               <div class="d-flex align-items-center">
                 <i class="bi bi-geo-alt"></i>
@@ -704,7 +720,7 @@
             </div>
           </div>
 
-          <div class="col-lg-5 col-md-8">
+          <!-- <div class="col-lg-5 col-md-8">
             <form method="post" role="form" class="php-email-form">
               <div class="form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -725,7 +741,7 @@
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
-          </div>
+          </div> -->
 
         </div>
 
